@@ -1,0 +1,21 @@
+<p-panel header="Pipes Numericos" class="p-1">
+    <p>Pipes incluidos en Agular - usualmente eb el Common module</p>
+</p-panel>
+
+<div class="grid">
+    <div class="col-12 md:col-4">
+        <p-card header="Ventas Netas">
+            {{totalSells + 123 | number:'1.2-2' }}
+        </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+        <p-card header="Ventas Brutas">
+            {{totalSells | currency:'':'symbol-narrow':'1.0-4' }}
+        </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+        <p-card header="Ganancia porcentual ">
+            {{percent | percent:'1.2-2' }}
+        </p-card>
+    </div>
+</div>
